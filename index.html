@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погодное приложение</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <div class="search-box">
+                <input type="text" placeholder="Введите город..." id="search-input">
+                <button id="search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="weather-body">
+                <div class="location-details">
+                    <h1 id="city">Москва</h1>
+                    <p id="date">Воскресенье, 20 Апреля</p>
+                </div>
+                
+                <div class="weather-details">
+                    <div class="temp" id="temp">
+                        <span>0</span>°C
+                    </div>
+                    <div class="weather" id="weather">
+                        Загрузка...
+                    </div>
+                    <div class="weather-icon">
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather Icon" id="weather-icon">
+                    </div>
+                </div>
+                
+                <div class="weather-info">
+                    <div class="column">
+                        <div>
+                            <p>Ощущается как</p>
+                            <p id="feels-like">0°C</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div>
+                            <p>Влажность</p>
+                            <p id="humidity">0%</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="weather-info">
+                    <div class="column">
+                        <div>
+                            <p>Ветер</p>
+                            <p id="wind-speed">0 м/с</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div>
+                            <p>Давление</p>
+                            <p id="pressure">0 мм рт.ст.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html> 
